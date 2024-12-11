@@ -15,6 +15,8 @@ git clone git@github.com:Nelyah/bme280sensors_sample
 cd bme280sensors_sample
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
 cp env.template .venv
 
 # Edit .env file
