@@ -1,0 +1,14 @@
+annotated-types==0.7.0
+certifi==2024.8.30
+influxdb-client==1.48.0
+pydantic==2.10.3
+pydantic_core==2.27.1
+python-dotenv==1.0.1
+reactivex==4.0.4
+RPi.bme280==0.2.4
+setuptools==75.6.0
+six==1.17.0
+smbus2==0.5.0
+types-influxdb-client==1.45.0.20240915
+typing_extensions==4.12.2
+urllib3==2.2.3

@@ -1,0 +1,16 @@
+[Unit]
+Description=Sample daemon for getting logs from temperature
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/pi/bme280sensors_sample
+ExecStart=/home/pi/bme280sensors_sample/.venv/bin/python sample.py --env-file .env --poll-seconds 60
+Restart=always
+RestartSec=5
+
+# Ensure proper termination of the process
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target
